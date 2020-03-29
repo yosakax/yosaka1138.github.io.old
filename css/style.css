@@ -1,0 +1,59 @@
+/* sanitize.cssをstyle.cssから読み込む->HTMLで参照するCSSが1つですむ */
+@import url(./sanitize.css);
+/* CSSとHTMLではコメントの記法が異なるので注意 */
+
+body {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0px;
+}
+/* 
+body {
+    background-color: black;
+} */
+
+/* class名でCSSを編集できる */
+div.content {
+    /* background-color: #fcc; */
+    /* background-color: rgb(255, 255, 0); */
+    color: rgb(83, 17, 17);
+    width: 600px;
+    margin: 10px auto; /*ページ全体の余白の設定　margin 上下　左右*/
+    border: 1px solid #d1d1d1;  /*線の太さ　線の種類　色*/
+    padding: 30px;  /*margin内部の余白の設定*/
+}
+
+
+input {
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 8px;
+
+}
+button {
+    width: 100%;
+    background-color: #2096F3;
+    border: none;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+div.control {
+    margin-bottom: 3em; /*初期値の3倍*/
+}
+
+.required {
+    margin-left: .3em;
+    color: #f33;
+    font-size: .9em;
+    padding: 3px;
+    background-color: #fee;
+    font-weight: bold;
+}
