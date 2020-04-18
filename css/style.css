@@ -3,12 +3,18 @@
 /* CSSとHTMLではコメントの記法が異なるので注意 */
 
 body {
-    background-color: #00FF00;
+    background-color:skyblue;
 }
-
-h1 {
-    font-size: 24px;
+img {
+    width: 30%;
+    height: auto;
+}
+h1.top {
+    text-align: center;
+    font-size: 50px;
     margin: 0px;
+    background-color: gray;
+    /* background-image: url(../fig/zeon.jpg); */
 }
 /* 
 body {
