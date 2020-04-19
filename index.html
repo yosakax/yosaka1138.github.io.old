@@ -1,36 +1,155 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <!-- 文字コード指定 -->
-        <meta charset="utf-8">
-        <!-- スマホなどでの表示範囲の設定：端末の幅に合わせる -->
-        <meta name="viewport" content="width=device-width">
-        <!-- tabの表示名 -->
-        <title>yosakaのページ</title>
-        <style>
-            /*一般にHTMLファイルに直接書かず.cssを外部参照する*/
-            /* CSSとHTMLではコメントの記法が異なるので注意 */
-            /* h1 {
-                font-size: 24px;
-                margin: 0px;
-            } */
-            /* p {
-                font-size: 14px;
-            } */
-        </style> 
-        <!-- ブラウザ依存の余白などをリセットするcss -->
-        <link rel="stylesheet" href="./css/sanitize.css">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <h1>
-            yosakaのページ
-        </h1>
+<!doctype html>
+<html lang="jp">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>yosaka1138's Profile</title>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <header class="pt-3 pb-2 bg-success">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">yosakaのプロフィール</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#likes">Likes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="no-gutters">
+                <img src="./fig/top_img.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+
+    <!-- プロフィール -->
+    <div id="profile" class="container pt-5 d-flex flex-column text-center">
+        <div class="pt-5 d-flex flex-column text-center">
+            <h1>about</h1>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="p-1 bg-success col-2"></div>
+            </div>
+        </div>
+        <div>
+            <img src="./fig/itsu_twicon04.png" alt="twitter-image" class="w-50 rounded-circle shadow-lg p-1 mb-5 bg-dark rounded">
+        </div>
+        <h1>Yasuhiro OSAKA</h1>
+        <p>email: fallingfluit@gmail.com</p>
         <p>
-            yosakaのポートフォリオです。<br>
-            M1 at Shibaura Instute of Technology. <br>
-            Majoring of Mechanical Engineering.
+            <ul><strong>NAME:</strong> Yasuhiro OSAKA </ul>
+            <ul><strong>UNIVERSITY:</strong> Shibaura Institute of Technology(M1) </ul>
+            <ul><strong>MAJORING:</strong> Mechanical Engineering</ul>
+            <ul><strong>LABOLATORY:</strong><a href="http://www.rcon.mech.shibaura-it.ac.jp/" target="_blank"> Uchimura Lab</a></ul>
         </p>
-    </body>
+    </div>
+    <div align="center">
+        <h3><strong>accounts</strong></h3>
+        <a href="https://github.com/yosaka1138" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"></a>
+        <a href="https://yosaka.qrunch.io/" target="_blank" style="margin-left: 10px;"><img src="./fig/qrunch.png"></a>
+        <a href="https://scrapbox.io/yosaka/" target="_blank" style="margin-left: 10px;"><img src="./fig/scrapbox-diary_s.jpg"></a>
+        <a href="https://atcoder.jp/users/rakka" target="_blank" style="margin-left: 10px;"><img src="./fig/Atcoder_logo.jpg"></a>
+    </div>
+
+    <div id="likes" class="container">
+        <div class="pt-5 d-flex flex-column text-center">
+            <h1>likes</h1>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="p-1 bg-success col-2"></div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap text-center">
+            <p>
+                Machine Learning <br>
+                Reinforcement Learning <br>
+                Competitive Programming
+            </p>
+        </div>
+    </div>
+
+    <div id="skills" class="container">
+        <div class="pt-5 d-flex flex-column text-center">
+            <h1>skills</h1>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="p-1 bg-success col-2"></div>
+            </div>
+            <p>
+                <h4>Python(2018/04~)</h4> <br>
+                研究とちょっとしたコードを書くときに使用します。一番使っている。<br>
+                <h4 style="margin-top: 30px;">Nim(2020/04~)</h4> <br>
+                主に競技プログラミングで使っている。Pythonで間に合わないときなどに使います。
+            </p>
+        </div>
+    </div>
+
+    <div id="works" class="container">
+        <div class="container">
+            <div class="pt-5 d-flex flex-column text-center">
+                <h1>works</h1>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="p-1 bg-success col-2"></div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="card p-0 col-12 col-sm-4">
+                    <img class="card-img-top" src="./fig/python.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://yosaka1138.github.io" target="_blank">portfolio</a></h5>
+                        <p class="card-text">
+                            It means this page. This page uses bootstrap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card p-0 col-12 col-sm-4">
+                    <img class="card-img-top" src="./fig/python.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://github.com/yosaka1138/py2arduino" target="_blank">py2arduino</a></h5>
+                        <p class="card-text">
+                            py2arduino is a library for operating arduino by python with pyfirmata. This is easier to write code than original pyfirmata.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="mt-3 bg-success text-right text-white-50" style="height: 3rem">
+        <p>©Yasuhiro OSAKA <br> <a href="https://icons8.com/icon/12599/github">GitHub icon by Icons8</a></p>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
